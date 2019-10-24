@@ -1,9 +1,18 @@
+<?php
+session_start();
+require_once $_SERVER['DOCUMENT_ROOT'].'/voting_system/resource/php/class/function/checkaccount.php';
+$checkaccount = new checkaccount();
+$checkaccount ->  checkadmin();
+require_once $_SERVER['DOCUMENT_ROOT'].'/voting_system/resource/php/class/function/view.php';
+$view = new view;
+$view -> viewscore();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registrar Portal</title>
+  <title>Voting System</title>
   <link rel="stylesheet" type="text/css"  href="vendor/css/bootstrap.min.css">
   <link href="vendor/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css"  href="vendor/css/bootstrap-select.min.css">
