@@ -23,7 +23,7 @@ $logout -> logouts();
 <body>
   <nav class="navbar navbar-dark bg-white shadow-sm slide-in-left">
 
-      <img src="resource\img\logo.png" height="70" class="d-inline-block align-top"
+      <img src="resource\img\brand.png" height="70" class="d-inline-block align-top"
         alt="mdb logo"><h3 class="ib">
     </a>
     <div class="d-flex align-items-end flex-column" >
@@ -35,11 +35,36 @@ $logout -> logouts();
 
     </div>
   </nav>
-  <a href="user_vote">Vote</a></br>
-  <a href="user_changepass">Change Password</a></br>
-  <form action="" method="post">
-            <input type="submit" name="logout" value="logout">
+  <div class="jumbotron mb-0"style="background-image: url('resource\img\logo.jpg'); background-size: 100%;">
+
+
+        <div class="body">
+        <div class="container mt-5 puff-in-center">
+            <div class="card-body" style="max-width: 100rem;height:31.4rem;">
+              <div class="card text-white bg-secondary  mb-5" style=" margin-left: 10rem;max-width: 50rem;height:40vh;">
+
+                <div class="card-body">
+                  <h5 class="card-title my-5"></h5></br>
+                    <button type="submit" onclick="window.location.href = 'user_vote'" name="" class="btn btn-primary btn-lg btn-block">Vote Here</button>
+                    <button type="submit" onclick="window.location.href = 'user_changepass.php'" name="" class="btn btn-primary btn-lg btn-block">Change Password</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
   </form>
+  <footer id="sticky-footer" class="py-1 mt--2 bg-dark text-white-50  slide-in-right">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col col-sm-5 text-left">
+          <small>Made by Ludwig Cartel, Duane Corea, Robin Santos, Ralph Ramirez</small>
+        </div>
+
+      </div>
+    </div>
+  </footer>
 </body>
     <script src="vendor/js/jquery.js"></script>
     <script src="vendor/js/popper.js"></script>

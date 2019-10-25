@@ -31,6 +31,13 @@ session_start();
 
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-white shadow-sm slide-in-left">
+
+        <img src="resource\img\brand.png" height="70" class="d-inline-block align-top"
+          alt="mdb logo"><h3 class="ib">
+      </a>
+    
+    </nav>
     <form class="" action="" method="post">
       <div class="pres">
            <div class='container-fluid pt-4'>
@@ -126,13 +133,26 @@ session_start();
      </div>
 <?php  $view -> viewa(); ?>
  </div>
+ <button type="submit"  name="" class="btn btn-primary btn-lg btn-block mt-5 mb-5">Submit</button>
  </div>
  </div>
  </div>
  </div>
+
+
+ <footer id="sticky-footer" class="py-1 mt--2 bg-dark text-white-50  slide-in-right">
+   <div class="container text-center">
+     <div class="row">
+       <div class="col col-sm-5 text-left">
+         <small>Made by Ludwig Cartel, Duane Corea, Robin Santos, Ralph Ramirez</small>
+       </div>
+
+     </div>
+   </div>
+ </footer>
       </div>
-      <input type="submit" name="submit" value="submit">
     </form>
+
   </body>
     <script src="vendor/js/jquery.js"></script>
     <script src="vendor/js/popper.js"></script>
