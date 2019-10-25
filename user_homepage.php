@@ -21,6 +21,20 @@ $logout -> logouts();
 
 </head>
 <body>
+  <nav class="navbar navbar-dark bg-white shadow-sm slide-in-left">
+
+      <img src="resource\img\logo.png" height="70" class="d-inline-block align-top"
+        alt="mdb logo"><h3 class="ib">
+    </a>
+    <div class="d-flex align-items-end flex-column" >
+
+
+      <form action="" method="post"class="d-flex align-items-end flex-column" >
+        <button type="submit" name="logout" class="btn btn-secondary btn-lg btn-block">Logout</button>
+      </form>
+
+    </div>
+  </nav>
   <a href="user_vote">Vote</a></br>
   <a href="user_changepass">Change Password</a></br>
   <form action="" method="post">
