@@ -43,7 +43,7 @@ $logout -> logouts();
             <div class="card text-white bg-secondary  mb-5" style=" margin-left: 10rem;max-width: 50rem;height:70vh;">
 
               <div class="card-body">
-                <h5 class="card-title my-5">Admin Fucntions</h5></br>
+                <h5 class="card-title my-5">Admin Functions</h5></br>
                   <button type="submit" onclick="window.location.href = 'admin_view_score.php'" name="" class="btn btn-primary btn-lg btn-block">View Scores</button>
                   <button type="submit" onclick="window.location.href = 'admin_register_voter.php'" name="" class="btn btn-primary btn-lg btn-block">Add Voters</button>
                   <button type="submit" onclick="window.location.href = 'admin_register_candidate.php'" name="" class="btn btn-primary btn-lg btn-block">Add Candidates</button>
