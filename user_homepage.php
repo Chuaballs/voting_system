@@ -50,7 +50,7 @@ $logout -> logouts();
               <h5 class="text-center  mt-4 py-4">
                 <?php $votestatus->checkhome(); ?>
               </h5>
-              <button style="width:50%;" type="submit" onclick="window.location.href = 'user_changepass.php'" name="" class="btn btn-primary btn-lg btn-block  mx-auto">Change Password</button>
+              <button style='width:50%;' type="submit" onclick="window.location.href = 'user_changepass.php'" name="" class="btn btn-primary btn-lg btn-block  mx-auto">Change Password</button>
                 </div>
               </div>
             </div>
@@ -63,7 +63,6 @@ $logout -> logouts();
         <div class="col col-sm-5 text-left">
           <small>Made by Ludwig Cartel, Duane Corea, Robin Santos, Ralph Ramirez</small>
         </div>
-
       </div>
     </div>
   </footer>
