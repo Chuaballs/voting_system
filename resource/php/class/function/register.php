@@ -20,6 +20,7 @@ class register extends config{
       $rows = $data1->fetchAll();
         foreach ($rows as $row) {
           $Fullname = $row->name;
+          var_dump($Fullname);
         }
         if($fullname == $Fullname){
           $message = "Candidate Already Existing";
