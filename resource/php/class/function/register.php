@@ -64,6 +64,7 @@ public function registervoter(){
       $sql = "INSERT INTO `users`(`username`, `password`,`name`) VALUES (?,?,?)";
       $data = $con->prepare($sql);
       $data->execute([$username,$password,$name]);
-}
+    }
+  }
 }
 ?>
