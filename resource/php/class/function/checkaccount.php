@@ -8,7 +8,7 @@
         if (isset($account_type)) {
           if($account_type == 'admin'){
           }else {
-            header('location: user_hompage.php');
+            header('location: user_homepage.php');
           }
       }else {
         header('location: index.php');
