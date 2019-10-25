@@ -1,8 +1,16 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'].'/voting_system/resource/php/class/function/checkaccount.php';
-$checkaccount = new checkaccount();
-$checkaccount ->  checkadmin();
+$id = $_SESSION['id'];
+$username = $_SESSION['username'];
+$account_type = $_SESSION['account_type'];
+  if (isset($account_type)) {
+    if($account_type == 'admin'){
+    }else {
+      header('location: user_hompage.php');
+    }
+}else {
+  header('location: index.php');
+}
     if (isset($_POST['register'])) {
       require_once $_SERVER['DOCUMENT_ROOT'].'/voting_system/resource/php/class/function/register.php';
       $register = new register($_POST['fullname'],$_POST['position']);
