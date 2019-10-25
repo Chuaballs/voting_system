@@ -32,7 +32,7 @@ class votestatus extends config{
             if($status == 'DONE'){
                echo "You Have Voted Successfully. ";
             }else {
-              echo  "<button type='submit' onclick='window.location.href = 'user_register_voter.php''class='btn btn-primary btn-lg btn-block  mx-auto'>Vote</button>";
+              echo  " <a style='width:50%;' href='user_vote' class='btn btn-primary btn-lg btn-block mx-auto'>Vote</a>";
             }
 
       }

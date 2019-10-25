@@ -15,7 +15,7 @@
         $position = $row->position;
         $score = $row->score;
         echo "<div class='form-group row pl-5'>";
-        echo "<div class='col-md-6>";
+        echo "<div class='col-md-6'>";
         echo "<input type='radio' name='president' value='$id'> $name";
         echo "</div>";
         echo "</div>";
