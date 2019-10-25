@@ -51,15 +51,19 @@ public function registervoter(){
       foreach ($rows as $row) {
         $Username = $row->username;
   }
-  if($username == $Username){
-    $message = "Username Taken";
-    echo "<script type='text/javascript'>alert('$message');</script>";
-  }else{
-
-    $sql = "INSERT INTO `users`(`username`, `password`,`name`) VALUES (?,?,?)";
-    $data = $con->prepare($sql);
-    $data->execute([$username,$password,$name]);
-  }
+    if (isset($Fullname)) {
+      if($username == $Username){
+        $message = "Username Taken";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+      }else{
+        $sql = "INSERT INTO `users`(`username`, `password`,`name`) VALUES (?,?,?)";
+        $data = $con->prepare($sql);
+        $data->execute([$username,$password,$name]);
+      }
+    }else {
+      $sql = "INSERT INTO `users`(`username`, `password`,`name`) VALUES (?,?,?)";
+      $data = $con->prepare($sql);
+      $data->execute([$username,$password,$name]);
 }
 }
 ?>
