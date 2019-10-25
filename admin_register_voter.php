@@ -16,18 +16,35 @@ $checkaccount ->  checkadmin();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voting System</title>
   <link rel="stylesheet" type="text/css"  href="vendor/css/bootstrap.min.css">
-  <link href="vendor/css/all.css" rel="stylesheet">
+  <link href="resource/css/all2.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css"  href="vendor/css/bootstrap-select.min.css">
 
   </head>
-  <body>
-    <form action="" method="post">
-
-    <input type="text" name="username" placeholder="username" value="">
-    <input type="password" name="password" placeholder="password" value="">
-    <input type="text" name="name" placeholder="name" value="">
-    <input type="submit" name="register" value="Submit">
-  </form>
+  <body class="text-center">
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="resource/img/brand.png" width="40" height="30" class="d-inline-block align-top" alt="">
+        Home
+      </a>
+    </nav>
+      <div class="wrapper">
+        <h1>Add User</h1>
+        <form class="form-signin" action="" method="post">
+          <div class="usercon">
+            <input type="text" class="form-control" name="username" placeholder="Username"/>
+          </div>
+          <div class="namecon">
+            <input type="text" class="form-control" name="name" placeholder="Name"/>
+          </div>
+          <div class="passcon">
+            <input type="password" class="form-control" name="password" placeholder="Password"/>
+          </div>
+          <div class="btncon">
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="register">Submit</button>
+          </div>
+        </form>
+    </div>
   </body>
     <script src="vendor/js/jquery.js"></script>
     <script src="vendor/js/popper.js"></script>
