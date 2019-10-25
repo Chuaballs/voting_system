@@ -23,7 +23,7 @@ $checkaccount ->  checkadmin();
   <body class="text-center">
     <!-- Image and text -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="admin_homepage">
         <img src="resource/img/brand.png" width="40" height="30" class="d-inline-block align-top" alt="">
         Home
       </a>

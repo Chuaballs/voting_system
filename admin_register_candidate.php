@@ -29,7 +29,7 @@ $account_type = $_SESSION['account_type'];
   </head>
   <body class="text-center">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="admin_homepage">
         <img src="resource/img/brand.png" width="40" height="30" class="d-inline-block align-top" alt="">
         Home
       </a>
