@@ -49,10 +49,8 @@ $changepassword ->changepassword();
                   <button type="submit" name="change"class="btn btn-primary mt-3">
                   Change
                   </button>
-                  <a href="admin_homepage.php">
-                    <button type="submit" name="change"class="btn btn-primary mt-3">
+                  <a href="admin_homepage.php" class="btn btn-primary mt-3">
                     Back
-                  </button>
                 </a>
                 </a>
               </div>
