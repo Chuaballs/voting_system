@@ -11,13 +11,32 @@ class votestatus extends config{
       $data->execute();
       $rows = $data->fetchAll();
         foreach ($rows as $row) {
-            $status =  $row->status;
+            $status=  $row->status;
           }
           if($status == 'DONE'){
              header('location: user_homepage.php');
           }
 
     }
+    public function checkhome(){
+        $config = new config;
+        $con = $config->Connect();
+        $id = $_SESSION['id'];
+        $sql = "SELECT * FROM `users` WHERE `id` = '$id' ";
+        $data = $con->prepare($sql);
+        $data->execute();
+        $rows = $data->fetchAll();
+          foreach ($rows as $row) {
+              $status=  $row->status;
+            }
+            if($status == 'DONE'){
+               echo "You Have Voted Successfully. ";
+            }else {
+              echo  "<button type='submit' onclick='window.location.href = 'user_register_voter.php''class='btn btn-primary btn-lg btn-block  mx-auto'>Vote</button>";
+            }
+
+      }
+
 
 }
  ?>
