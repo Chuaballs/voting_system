@@ -11,22 +11,31 @@ $login -> login();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voting System</title>
+  <title>Registrar Portal</title>
   <link rel="stylesheet" type="text/css"  href="vendor/css/bootstrap.min.css">
-  <link href="vendor/css/all.css" rel="stylesheet">
+  <link href="resource/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css"  href="vendor/css/bootstrap-select.min.css">
-
 </head>
-<body>
-  <form  action="" method="post">
-    <input type="text" name="username" placeholder="username" value="">
-      <input type="password" name="password" placeholder="password" value="">
-        <input type="submit" name="login"  value="Login">
-  </form>
+  <body class="text-center">
+      <div class="wrapper">
+        <form class="form-signin" action="" method="post">
+          <div class="img">
+            <img src="resource/img/logojpg.png" alt="">
+          </div>
+          <div class="usercon">
+            <input type="text" class="form-control" name="username" placeholder="Username"/>
+          </div>
+          <div class="passcon">
+            <input type="password" class="form-control" name="password" placeholder="Password" />
+          </div>
+          <div class="btncon">
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">Login</button>
+          </div>
+        </form>
+    </div>
 </body>
     <script src="vendor/js/jquery.js"></script>
     <script src="vendor/js/popper.js"></script>
     <script src="vendor/js/bootstrap.min.js"></script>
     <script src="vendor/js/bootstrap-select.min.js"></script>
-</body>
 </html>

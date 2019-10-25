@@ -21,6 +21,8 @@ class register extends config{
         foreach ($rows as $row) {
           $Fullname = $row->name;
         }
+        if (isset($Fullname)) {
+
         if($fullname == $Fullname){
           $message = "Candidate Already Existing";
           echo "<script type='text/javascript'>alert('$message');</script>";
@@ -30,6 +32,11 @@ class register extends config{
           $data = $con->prepare($sql);
           $data->execute([$fullname,$position]);
         }
+      }else {
+        $sql = "INSERT INTO `candidates`(`name`, `position`) VALUES (?,?)";
+        $data = $con->prepare($sql);
+        $data->execute([$fullname,$position]);
+      }
 }
 public function registervoter(){
     $config = new config;
