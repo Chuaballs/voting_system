@@ -1,3 +1,11 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'].'/voting_system/resource/php/class/function/login.php';
+session_start();
+if (isset($_POST['login'])) {
+$login = new login($_POST['username'],$_POST['password']);
+$login -> login();
+}
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
