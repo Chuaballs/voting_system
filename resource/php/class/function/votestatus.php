@@ -11,7 +11,7 @@ class votestatus extends config{
       $data->execute();
       $rows = $data->fetchAll();
         foreach ($rows as $row) {
-            $status=  $row->status;
+            $status =  $row->status;
           }
           if($status == 'DONE'){
              header('location: user_homepage.php');
