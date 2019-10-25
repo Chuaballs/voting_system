@@ -34,17 +34,19 @@ $logout -> logouts();
           </form>
         </div>
       </nav>
-<div class="jumbotron mb-0"style="background-image: url('resource\img\logo.jpg'); background-size: 100%;">
+<div class="jumbotron mb-0 bg-light">
 
 
-      <div class="body">
-      <div class="container mt-5 puff-in-center">
-          <div class="card-body" style="max-width: 100rem;height:31.4rem;">
-            <div class="card text-white bg-secondary  mb-5" style=" margin-left: 10rem;max-width: 50rem;height:70vh;">
+      <div class="">
+      <div class="container mt-5 puff-in-center"style=" margin-left: 30rem;max-width: 50rem;">
+          <div class="card-body p-2" style="max-width: 100rem; height:37.3rem;background-color:	#D3D3D3;">
+            <div class="card text-secondary bg-light p-5 mb-5">
 
               <div class="card-body">
-                <h5 class="card-title my-5">Admin Functions</h5></br>
+                <h5 class="card-title my-3">Admin Functions</h5></br>
                   <button type="submit" onclick="window.location.href = 'admin_view_score.php'" name="" class="btn btn-primary btn-lg btn-block">View Scores</button>
+                  <button type="submit" onclick="window.location.href = 'admin_view_candidate.php'" name="" class="btn btn-primary btn-lg btn-block">View Candidates</button>
+                  <button type="submit" onclick="window.location.href = 'admin_view_user.php'" name="" class="btn btn-primary btn-lg btn-block">Users/Voters</button>
                   <button type="submit" onclick="window.location.href = 'admin_register_voter.php'" name="" class="btn btn-primary btn-lg btn-block">Add Voters</button>
                   <button type="submit" onclick="window.location.href = 'admin_register_candidate.php'" name="" class="btn btn-primary btn-lg btn-block">Add Candidates</button>
                   <button type="submit" onclick="window.location.href = 'admin_changepass.php'" name="" class="btn btn-primary btn-lg btn-block mt-5">Change Password</button>
