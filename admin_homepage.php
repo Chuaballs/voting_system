@@ -38,7 +38,7 @@ $logout -> logouts();
 
 
       <div class="">
-      <div class="container mt-5 puff-in-center"style=" margin-left: 30rem;max-width: 50rem;">
+      <div class="container mt-5 puff-in-center mx-auto"style=" max-width: 50rem;">
           <div class="card-body p-2" style="max-width: 100rem; height:37.3rem;background-color:	#D3D3D3;">
             <div class="card text-secondary bg-light p-5 mb-5">
 
